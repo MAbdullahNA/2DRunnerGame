@@ -13,6 +13,8 @@ public class PlayerScript : MonoBehaviour
         {
             GameManger.instance.gameStart=false;
             GameManger.instance.gameEndPanel.SetActive(true);
+            int scr=(int)GameManger.instance.score;
+            GameManger.instance.winScore.text=scr.ToString();
             Destroy(GameManger.instance.injection);
             Time.timeScale=0;
         }
@@ -27,6 +29,7 @@ public class PlayerScript : MonoBehaviour
         {
             if(isGrounded&&GameManger.instance.gameStart)
             {
+                isGrounded=false;
                 rb.AddForce(new Vector2(rb.velocity.x,jumpForce));
             }
         }

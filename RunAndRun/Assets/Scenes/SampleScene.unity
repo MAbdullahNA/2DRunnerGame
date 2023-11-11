@@ -226,6 +226,7 @@ MonoBehaviour:
   tapToPlay: {fileID: 629663500}
   gameEndPanel: {fileID: 1099580255}
   scoreText: {fileID: 1842918875}
+  winScore: {fileID: 1269233141}
   background: {fileID: 2100000, guid: 3b81f0f2215f8324b8da90438d00b0be, type: 2}
   startPosition: {fileID: 169357630}
   endPosition: {fileID: 1954454355}

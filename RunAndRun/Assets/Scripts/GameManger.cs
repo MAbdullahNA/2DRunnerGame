@@ -9,6 +9,7 @@ public class GameManger : MonoBehaviour
     public GameObject tapToPlay;
     public GameObject gameEndPanel;
     public Text scoreText;
+    public Text winScore;// score when game ends
     public Material background;
     private float offsetValue=0;
     public Transform startPosition;
